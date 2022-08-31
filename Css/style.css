@@ -1,0 +1,223 @@
+body {
+    height: 100%;
+    background-color: grey;
+}
+  
+* {
+    box-sizing:border-box;
+    padding: 2px;
+    margin: 0%;
+}
+
+
+#box {
+    background-color: rgba(255, 255, 255, 0.6); 
+    color: whitesmoke;
+    font-weight: bold;
+    border: 3px solid grey;
+    position: sticky;
+    border-radius: 5px;
+    top: 13%;
+    left: 32%;
+   
+    z-index: 2;
+    width: 30%;
+    min-width: 150px;
+    padding: 10px 10px;
+    text-align: justify;
+}
+
+p{
+    font-size: 40px;
+    font-family: sans-serif;
+    width: 120%;
+    border: 2px solid #f1f1f1;
+    transform: translate(-8%, 0%);
+    background-color: grey;
+    border-radius: 10px;
+    z-index: 3;
+    padding: 5px;
+}
+
+#mili{
+    font-size: 14px;
+}
+
+
+#buttons button {
+    background: linear-gradient(0deg,rgb(70, 70, 71) 0%, rgba(106, 106, 110, 0.548) 100%);
+    border: black solid 1px;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    margin: 40px 10px 0px;
+    color: whitesmoke;
+}
+#buttons button span {
+    position: relative;
+    display: block;
+}
+#buttons button:hover{
+    background: rgb(59, 61, 59);
+    padding: 10px;
+    box-shadow: 2px 2px rgb(82, 84, 97);
+}
+
+
+#laps-list{
+    position: absolute;
+    top: 10%;
+    left: 65%;
+    z-index: 2;
+    padding: 20px;
+    
+    border-radius: 25px;
+}
+
+
+#lap{
+    border-radius: 25px;
+    font-size: 25px;
+    width: 100px;
+    padding: 8px;
+    margin-left: 145px;
+    background-color:rgb(16, 16, 20);
+    border: rgb(19, 15, 15) 2px solid;
+    color: whitesmoke;
+}
+
+
+#flex{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    padding: 20px;
+    height: 70vh;
+}
+
+
+.lap-item{
+    background-color: rgb(184, 174, 174);
+    border-radius: 20px;
+    padding: 1px 50px;
+    margin-top: 2px;
+}
+
+
+#flex span{
+    font-size: 25px;
+      
+}
+.times{
+    margin-left: 80px;
+}
+
+
+.stoptime_display {
+    width: 20%;
+    margin-top: 6%;
+    overflow-y: auto;
+    margin-left: 5%;
+    background-color: rgb(24, 24, 26);
+    border-radius: 10px;
+}
+
+h1{
+    color:white;
+   
+    text-align: center;
+    margin-left: 5px;
+}
+ul {
+    width: 100%;
+    height: 100%;
+}
+
+ul,
+li {
+    font-family: "Urbanist", sans-serif;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+
+li:first-child {
+    margin-top: 0;
+}
+
+li {
+    list-style-type: none;
+    margin: 5px ;
+    background-color: #f1ebdc;
+    padding-left: 35px;
+    border-radius: 15px;
+    margin-left: 10px;
+}
+
+
+@media only screen and (max-width:450px){
+
+ 
+    .stoptime_display{
+        display: none;
+    }
+    
+    #box {
+        left: 50%;
+        min-width: 300px;
+        padding: 10px;
+        transform: translate(-50%, 0%);
+    }
+    
+    h1{
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    #buttons button {
+        width: 70px;
+        height: 30px;
+        margin: 10px 5px 0px;
+        font-size: 10px;
+    }
+
+    
+    #laps-list{
+        top: 50%;
+        left: 50%;
+        width: 350px;
+        transform: translate(-50%, 0%);
+        padding: 5px;
+        border-radius: 25px;
+    }
+    
+  
+    #lap{
+        border-radius: 25px;
+        font-size: 12px;
+        width: 80px;
+        padding: 2px;
+        margin-left: 130px;
+    }
+    
+
+    #flex{
+        padding: 10px;
+        height: 35vh;
+    }
+    
+    .lap-item{
+        border-radius: 10px;
+        padding: 2px 30px;
+        margin-top: 2px;
+    }
+
+    #flex span{
+        font-size: 15px;
+    }
+
+    .times{
+        margin-left: 100px;
+    }
+
+}
